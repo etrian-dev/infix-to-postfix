@@ -24,8 +24,7 @@ int main(void) {
 	char *line = 0, *token = 0;
 	
 	// read input line
-	//line = readline("insert expression: ");
-	line = readline(NULL);
+	line = readline("insert infix expression: ");
 	
 	// alloc token
 	token = (char*) calloc(TOK_SZ, sizeof(*token));
