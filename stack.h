@@ -5,14 +5,11 @@
 
 #include <stdlib.h>
 
-typedef struct node_t {
-	char key;
-	struct node_t* next;
-} Node;
-typedef Node* Stack;
+struct node_t;
+typedef struct node_t *Stack;
 
-int push(Stack* s, const char token);
-char peek(Stack s);
-Node* pop(Stack* s);
+int push(Stack *s, void *token, size_t data_sz);
+void* peek(Stack s);
+Stack pop(Stack *s);
 
 #endif
