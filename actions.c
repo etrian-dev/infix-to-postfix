@@ -3,7 +3,7 @@
 
 /* determines precedence of operator op:
  * {+, -} = 0
- * {*, /} = 1
+ * {*, /, %} = 1
  */
 int precedence(const char op)
 {
@@ -14,7 +14,10 @@ int precedence(const char op)
         return 0;
     case '*':
     case '/':
+    case '%':
         return 1;
+    case '^':
+        return 2;
     default:
         puts("\nInput error: operator not supported");
         exit(EXIT_FAILURE);
