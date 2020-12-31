@@ -1,9 +1,8 @@
 // stack to hold operators
+#include <stddef.h>
 
 #ifndef STACK_H_INCLUDED
 #define STACK_H_INCLUDED
-
-#include <stdlib.h>
 
 struct node_t;
 typedef struct node_t *Stack;

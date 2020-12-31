@@ -1,11 +1,13 @@
 #include "stack.h"
+
 #include <stdio.h>
+#include <stdlib.h>
 #include <string.h>
 
 // completes type definition
 /* generic stack data structure, supports nodes of different types, as long as
  * the size is supplied at push
- */ 
+ */
 struct node_t {
     void *key;
     struct node_t* next;
